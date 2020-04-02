@@ -19,7 +19,7 @@ class App < Sinatra::Base
     "Goodbye #{@p_name}"
   end
   
-  get '/mulitply' do
+  get '/mulitply/:num1/:num2' do
     @num_1 = params[:num1]
     @num_2 = params[:num2]
     @num_1.to_i * @num_2.to_i
